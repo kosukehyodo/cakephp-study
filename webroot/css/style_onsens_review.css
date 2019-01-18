@@ -1,0 +1,257 @@
+
+
+/*ヘッダー*/
+/*relativeがベースとなるところ*/
+
+header {
+  background: pink;
+  height: 100px;
+  font-size: 40px;
+}
+
+
+header h1{
+  padding:20px 0 0 100px;
+  font-weight: bold;
+  float:left;
+}
+
+
+
+body {
+  /*width: 1200px;*/
+  margin: 0 auto;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+}
+
+.container{
+  /*width: 1200px;*/
+  margin: 0 auto;
+  text-align:center;
+ 
+}
+
+.title{
+  padding:40px 0;
+}
+
+
+/*reviewページ★マーク*/
+
+.miura-star-rating{
+  font-size:0;
+  white-space:nowrap;
+  display:inline-block;
+  
+  vertical-align: middle;/*追加した*/
+  
+  width:250px;
+  height:50px;
+  overflow:hidden;
+  position:relative;
+  background:
+      url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+  background-size: contain;
+}
+
+.miura-star-rating i{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    z-index: 1;
+    background: 
+        url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');  
+    background-size: contain;
+}
+
+i:nth-child(1) {
+     left: 0%;
+}
+i:nth-child(2) {
+     left: 20%;
+}
+i:nth-child(3) {
+     left: 40%;
+}
+i:nth-child(4) {
+     left: 60%;
+}
+i:nth-child(5) {
+     left: 80%;
+}
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clearfix{
+  margin-bottom:50px;
+}
+
+.r_left{
+  float: left;
+  width: 20%;
+  padding-top:75px;
+  margin-left:50px;
+  /*background: lightblue;*/
+  
+}
+
+.r_right{
+  float:right;
+  width: 800px;
+  margin-right:120px;
+  text-align: left;
+  /*background-color:#fce2c4;*/
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+.right{
+  text-align: left;
+  width: 750px;
+  margin:25px 25px -30px 0;
+}
+
+.r_right .body-text{
+  margin:15px 0 0 15px;
+}
+
+.r_right .score{
+  display: inline;
+  vertical-align: middle;
+}
+
+.r_garally{
+  padding-bottom:20px;
+  margin:15px 0 0 15px;
+  border-bottom: 2px dotted lightgray;
+}
+
+.r_regis{
+  margin-top:-10px;
+  text-align:right;
+}
+
+/***以下確認用***/
+/*以下、①背景色など*/
+.line-bc {
+  padding: 20px 10px;
+  max-width: 450px;
+  margin: 15px auto;
+  text-align: right;
+  font-size: 14px;
+  background: #7da4cd;
+
+}
+
+/*以下、②左側のコメント*/
+.balloon6 {
+    width: 100%;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.balloon6 .faceicon {
+    float: left;
+    margin-right: -50px;
+    width: 40px;
+}
+
+.balloon6 .faceicon img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.balloon6 .chatting {
+    width: 100%;
+    text-align: left;
+}
+.says {
+    display: inline-block;
+    position: relative; 
+    /*margin: 0 0 0 50px;*/
+    padding: 10px;
+    /*max-width: 250px;*/
+    border-radius: 12px;
+    background: #fce2c4;
+}
+
+.says:after {
+    content: "";
+    display: -webkit-box;
+    position: absolute;
+    top: 35px;
+    left: -11px;
+    border: 25px solid #fce2c4;
+    border-right: 25px solid #fce2c4;
+    -ms-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+}
+
+
+.says p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*以下、③右側の緑コメント*/
+.mycomment {
+    margin: 10px 0;
+}
+.mycomment p{
+    display: inline-block;
+    position: relative; 
+    margin: 0 10px 0 0;
+    padding: 8px;
+    max-width: 250px;
+    border-radius: 12px;
+    background: #30e852;
+    font-size: 15px;
+}
+
+.mycomment p:after {
+    content: "";
+    position: absolute;
+    top: 3px; 
+    right: -19px;
+    border: 8px solid transparent;
+    border-left: 18px solid #30e852;
+    -ms-transform: rotate(-35deg);
+    -webkit-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+}
+
+/***以上確認用***/
+
+em {
+  font-style: italic;
+}
+
+img.image{
+  margin-left:30px;
+}
+
+/*.button{*/
+/*  background-color:rgba(51,153,255,0);*/
+/*}*/
+
+/*フッター*/
+
+footer {
+  background: pink;
+  height: 100px;
+  font-size: 60px;
+  padding-top:50px;
+  text-align:center;
+}
+

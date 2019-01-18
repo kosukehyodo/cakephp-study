@@ -1,0 +1,141 @@
+/*ヘッダー*/
+
+header {
+  background: pink;
+  height: 100px;
+  font-size: 40px;
+}
+
+
+
+header h1{
+  padding:20px 0 0 100px;
+  font-weight: bold;
+  float:left;
+}
+
+header a{
+  float:right;
+  padding:20px;
+  margin-right:20px;
+}
+
+
+
+/*検索結果*/
+.retrieval{
+ text-align:center;
+ font-size:35px;
+ padding-top:30px;
+}
+
+/*検索された温泉の数を表示*/
+.onsens_hit{
+text-align:center;
+padding-top:30px;
+}
+
+.onsens_image{
+float:left;
+margin-left:60px;
+}
+
+/*画像の高さ*/
+.img{
+  height:310px;
+}
+/*温泉情報*/
+.onsens_info{
+ font-size:20px;
+}
+
+.onsens{
+  padding-top:50px;
+  width:1000px;
+  height:409px;
+  background-color:#fce2c4;
+  margin:0 auto;
+  margin-bottom:50px;
+}
+
+.button{
+  width:160px;
+  font-size:15px;
+  margin:15px 36px;
+  height:55px;
+  display: inline-block;
+  margin-left:0;
+}
+
+.slider {
+	margin: 0 0 50px;
+}
+
+/*.slider img {*/
+/*	width: 100%;*/
+	/*height: auto;*/
+/*}*/
+.single-item {
+	max-width: 600px;
+	margin: 0 auto 50px;
+}
+.slick-prev::before, .slick-next::before {
+	font-size: 24px;
+}
+.lazy-item .slick-next,
+.thumb-item-nav .slick-next,
+.multiple-item .slick-next,
+.center-item .slick-next {
+	right: 20px;
+	z-index: 99;
+}
+.lazy-item .slick-prev,
+.thumb-item-nav .slick-prev,
+.multiple-item .slick-prev,
+.center-item .slick-prev {
+	left: 15px;
+	z-index: 100;
+}
+.single-item .slick-prev::before,
+.single-item .slick-next::before {
+	color: #666;
+}
+.slick-dots {
+	bottom:-25px;
+}
+.multiple-item li {
+	margin: 0 5px;
+}
+.thumb-item {
+	max-width: 700px;
+	margin: 0 auto 5px;
+	padding: 0 5px;
+}
+.thumb-item-nav {
+	max-width: 700px;
+	margin: 0 auto;
+}
+.thumb-item-nav li{
+	margin: 5px;
+}
+.lazy-item {
+	width: 400px;
+	margin: 0 auto 50px;
+}
+.lazy-item li {
+	margin: 0 5px;
+}
+
+/*フッター*/
+
+footer {
+  background: pink;
+  height: 100px;
+  width:100%;
+  font-size: 60px;
+  padding-top:50px;
+  text-align:center;
+  position: abosolute;
+  bottom: 0;
+  
+}
